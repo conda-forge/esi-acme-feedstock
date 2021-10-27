@@ -28,7 +28,7 @@ requirements:
     - dask-jobqueue >=0.7.1,<0.8
     - distributed >=2.25,<2.26
     - fsspec >=0.3.3
-    - click < 8.0
+    - click <8.0
     - h5py >=2.9,<3
     - numpy >=1.0,<2.0
     - pip
