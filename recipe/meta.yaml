@@ -1,5 +1,5 @@
 {% set name = "esi-acme" %}
-{% set version = "0.2rc3.dev0" %}
+{% set version = "0.2rc2" %}
 
 
 package:
@@ -28,6 +28,7 @@ requirements:
     - dask-jobqueue >=0.7.1,<0.8
     - distributed >=2.25,<2.26
     - fsspec >=0.3.3
+    - click < 8.0
     - h5py >=2.9,<3
     - numpy >=1.0,<2.0
     - pip
@@ -44,7 +45,7 @@ test:
 
 about:
   home: https://esi-acme.readthedocs.io/en/latest/
-  summary: Asynchronous Computing Made Easy
+  summary: Asynchronous Computing Made ESI
   license: BSD-3-Clause
   license_file: LICENSE
 
