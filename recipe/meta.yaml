@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-acme-{{ version }}.tar.gz
-  sha256: 020e7b9e8b3396193bb3ad8d8cbbcaefff9e1946f4ed0468468d72e827de8679
+  sha256: 28ea56aa84f69d767dbe58d6093ee8d4e4583a3379934d980dfd49b2edd86d4b
 
 build:
   number: 0
