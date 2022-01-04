@@ -11,24 +11,19 @@ source:
   sha256: a15d0acaccf5423db6078db6d3d03de5d6235ff15478f9071fa9f0900e54879a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.7,<3.9
     - setuptools-scm
     - ruamel.yaml >=0.16,<0.17
   run:
-    - bokeh
-    - colorama
-    - dask-core >=2.25,<2.26
+    - dask <2021.12
     - dask-jobqueue >=0.7.1,<0.8
-    - distributed >=2.25,<2.26
-    - fsspec >=0.3.3
-    - click <8.0
     - h5py >=2.9,<3
     - numpy >=1.0,<2.0
     - pip
