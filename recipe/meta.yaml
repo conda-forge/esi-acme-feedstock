@@ -1,5 +1,5 @@
 {% set name = "esi-acme" %}
-{% set version = "0.2rc3" %}
+{% set version = "0.21" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-acme-{{ version }}.tar.gz
-  sha256: a15d0acaccf5423db6078db6d3d03de5d6235ff15478f9071fa9f0900e54879a
+  sha256: 0aba859a8adfcb58bd296b7903d276686f664dd9956b93952d8b9cdba63c6e15
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
