@@ -1,5 +1,5 @@
 {% set name = "esi-acme" %}
-{% set version = "0.21" %}
+{% set version = "2022.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-acme-{{ version }}.tar.gz
-  sha256: 0aba859a8adfcb58bd296b7903d276686f664dd9956b93952d8b9cdba63c6e15
+  sha256: 911ebc0d17f663f3499e84fcdf4f8cdb9908fc780ab120109fb6a145420665e9
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pyyaml
   run:
     - colorama
-    - dask <2021.12
+    - dask <2022.6
     - dask-jobqueue >=0.7.1,<0.8
     - h5py >=2.9,<3
     - numpy >=1.0,<2.0
