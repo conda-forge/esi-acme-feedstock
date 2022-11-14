@@ -1,5 +1,5 @@
 {% set name = "esi-acme" %}
-{% set version = "2022.8" %}
+{% set version = "2022.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-acme-{{ version }}.tar.gz
-  sha256: 2ef50e4a323d0a0a4d55dd7005a8e14f9d32803d4da40aeb495aa32ac0c4afc9
+  sha256: 6d14d8f5cff708d67ce7529221306a78e4e2733304769aa03450f43095adc494
 
 build:
   number: 0
@@ -18,19 +18,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7,<3.10
+    - python >=3.7,<3.11
     - pyyaml
     - setuptools-scm
     - toml
   run:
+    - click <8.1
     - colorama
-    - dask <2022.6
-    - dask-jobqueue >=0.7.1,<0.8
+    - dask <2022.11
+    - dask-jobqueue >=0.8,<0.9
     - h5py <4
     - numpy >=1.0,<2.0
     - pip
     - psutil
-    - python >=3.7,<3.10
+    - python >=3.7,<3.11
     - tqdm >=4.31
 
 test:
