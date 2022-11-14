@@ -27,7 +27,7 @@ requirements:
     - colorama
     - dask <2022.11
     - dask-jobqueue >=0.8,<0.9
-    - h5py<4
+    - h5py <4
     - numpy >=1.0,<2.0
     - pip
     - psutil
