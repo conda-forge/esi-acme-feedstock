@@ -1,11 +1,11 @@
-About esi-acme
-==============
+About esi-acme-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/esi-acme-feedstock/blob/main/LICENSE.txt)
 
 Home: https://esi-acme.readthedocs.io/en/latest/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/esi-acme-feedstock/blob/main/LICENSE.txt)
 
 Summary: Asynchronous Computing Made ESI
 
