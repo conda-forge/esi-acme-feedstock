@@ -23,9 +23,8 @@ requirements:
     - setuptools-scm
     - toml
   run:
-    - click <8.1
     - colorama
-    - dask <2022.11
+    - dask >=2021.09.0, <2023.4
     - dask-jobqueue >=0.8,<0.9
     - h5py <4
     - numpy >=1.0,<2.0
