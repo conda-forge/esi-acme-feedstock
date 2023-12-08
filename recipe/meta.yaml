@@ -18,19 +18,21 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7,<3.11
+    - python >=3.7,<3.13
     - pyyaml
-    - setuptools-scm
     - toml
   run:
+    - cloudpickle <=2.2.1
     - colorama
-    - dask >=2021.09.0, <2023.4
+    - dask >=2021.09.0, <=2023.12
     - dask-jobqueue >=0.8,<0.9
     - h5py <4
     - numpy >=1.0,<2.0
     - pip
     - psutil
-    - python >=3.7,<3.11
+    - python >=3.7,<3.13
+    - msgpack-python <1.0.7
+    - toolz >=0.12
     - tqdm >=4.31
 
 test:
