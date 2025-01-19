@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-acme-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/esi-acme-{{ version }}.tar.gz
   sha256: 10f140ff169b96565cbb824982123e71df707792e37e0329e2acdeeb3171a1d8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7,<3.13
+    - python {{ python_min }}
     - pyyaml
     - toml
   run:
@@ -30,7 +30,7 @@ requirements:
     - numpy >=1.0,<2.0
     - pip
     - psutil
-    - python >=3.7,<3.13
+    - python >={{ python_min }},<3.13
     - msgpack-python <1.0.7
     - toolz >=0.12
     - tqdm >=4.31
@@ -42,6 +42,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://esi-acme.readthedocs.io/en/latest/
