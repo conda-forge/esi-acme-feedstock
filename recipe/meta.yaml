@@ -1,5 +1,5 @@
 {% set name = "esi-acme" %}
-{% set version = "2023.12" %}
+{% set version = "2025.1" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/esi-acme-{{ version }}.tar.gz
-  sha256: 10f140ff169b96565cbb824982123e71df707792e37e0329e2acdeeb3171a1d8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 609a4e78f419ff84de2c6a1eb8713b56660e452edc59202d7c3f19a0373309eb
 
 build:
   number: 0
