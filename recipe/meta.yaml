@@ -18,20 +18,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7,<3.13
+    - python {{ python_min }}
     - pyyaml
     - toml
+    - setuptools
   run:
-    - cloudpickle <=2.2.1
-    - colorama
-    - dask >=2021.09.0, <=2023.12
-    - dask-jobqueue >=0.8,<0.9
-    - h5py <4
-    - numpy >=1.0,<2.0
+    - cloudpickle >2.2
+    - dask >=2022.12.1, <=2024.12.1
+    - dask-jobqueue >=0.8,<1.0
+    - h5py >=3,<4
+    - numpy >=1.0,<3.0
     - pip
     - psutil
-    - python >=3.7,<3.13
-    - msgpack-python <1.0.7
+    - python >={{ python_min }},<3.14
     - toolz >=0.12
     - tqdm >=4.31
 
@@ -42,6 +41,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://esi-acme.readthedocs.io/en/latest/
